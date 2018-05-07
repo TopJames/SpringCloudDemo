@@ -1,4 +1,4 @@
-package com.serverZipkin.demo;
+package com.motanClient.demo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ServerZipkinApplicationTests {
+public class MotanClientApplicationTests {
 
 	@Test
 	public void contextLoads() {
