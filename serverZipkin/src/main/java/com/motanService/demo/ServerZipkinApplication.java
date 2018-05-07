@@ -1,4 +1,4 @@
-package com.serverZipkin.demo;
+package com.motanService.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

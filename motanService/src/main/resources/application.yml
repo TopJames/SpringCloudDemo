@@ -1,0 +1,13 @@
+server:
+  port: 9000
+
+
+#motan:
+#  enabled: true
+#  annotation:
+#    package: com.motanService
+#  registry:
+#    regProtocol: consul
+#    address: 127.0.0.1:8500
+#    name: my_consul
+#    connectTimeout: 40000
