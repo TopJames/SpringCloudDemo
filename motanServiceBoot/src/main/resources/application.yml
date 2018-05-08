@@ -1,0 +1,22 @@
+server:
+  port: 9000
+
+
+motan:
+  annotation:
+    package: com.MotanServiceBoot.service
+  registry:
+    regProtocol: consul
+    address: 127.0.0.1:8500
+    name: my_consul
+    connectTimeout: 40000
+  protocol:
+      name: motan
+  basicservice:
+      group: I_am_fucking_good
+      application: demo
+      exportPort: 8888
+      accessLog: false
+      shareChannel: true
+#  referer:
+#      requestTimeout: 40000
