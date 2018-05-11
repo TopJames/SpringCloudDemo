@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class WebController {
 
     @MotanReferer
-    BraveEnough braveEnough;
+    com.motanService.demo.service.FooService fooService;
 
     @RequestMapping("/hi")
     public String hiBrave(@RequestParam String content){
-        return braveEnough.ha(content);
+        return fooService.hello(content);
     }
 }

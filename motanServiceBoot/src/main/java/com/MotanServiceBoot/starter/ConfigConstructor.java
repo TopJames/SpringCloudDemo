@@ -14,14 +14,15 @@ import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.util.StringUtils;
 
-//@ComponentScan
-@Configuration
+@ComponentScan
+//@Configuration
 public class ConfigConstructor {
 
     /** 注册中心配置bean名称 */
     private static final String REGISTRY_CONFIG_BEAN_NAME = "lalalalalalallalalladas_spring-boot-starter-motan-registry_";
     /** 协议配置bean名称 */
-    private static final String PROTOCOL_CONFIG_BEAN_NAME = "hdiwuhqdi82yeds7298ypd7fuck!_spring-boot-starter-motan-protocol_";
+  //  private static final String PROTOCOL_CONFIG_BEAN_NAME = "hdiwuhqdi82yeds7298ypd7fuck!_spring-boot-starter-motan-protocol_";
+    private static final String PROTOCOL_CONFIG_BEAN_NAME = "motan";
 
     /**
      * define AnnotationBean
@@ -87,6 +88,7 @@ public class ConfigConstructor {
      * 注释的代码，在Motan0.21版本中已不支持这些属性设置，可使用表示相同意义的参数设置
      */
     @Bean(name = PROTOCOL_CONFIG_BEAN_NAME)
+ //   @Bean(name="motan")
     public ProtocolConfigBean protocolConfig(ProtocolConfigProperties protocolConfig) {
         ProtocolConfigBean config = new ProtocolConfigBean();
         // 如果未配置，则默认设置为motan
@@ -198,6 +200,7 @@ public class ConfigConstructor {
                 throw new RuntimeException("need service export port...");
             }
             config.setExport(PROTOCOL_CONFIG_BEAN_NAME + ":" + basicServiceConfig.getExportPort());
+         //   config.setExport(basicServiceConfig.getExportPort());
         }
 
         if (!StringUtils.isEmpty(basicServiceConfig.getExtConfigId())) {

@@ -13,5 +13,5 @@
     <!-- exporting service by Motan -->
     <!--<motan:service interface="com.motanService.demo.service.FooService" ref="serviceImpl" export="8002" />-->
 
-    <motan:service  interface="com.motanService.demo.service.FooService" ref="serviceImpl" registry="my_consul"  export="8002" />
+    <motan:service group="oooooo" interface="com.motanService.demo.service.FooService" ref="serviceImpl" registry="my_consul"  export="8002" />
 </beans>

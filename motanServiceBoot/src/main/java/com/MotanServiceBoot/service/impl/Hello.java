@@ -1,11 +1,12 @@
 package com.MotanServiceBoot.service.impl;
 
 
-import com.MotanServiceBoot.service.FooService;
+import com.motanService.demo.service.FooService;
 import com.weibo.api.motan.config.springsupport.annotation.MotanService;
 import org.springframework.stereotype.Service;
 
 
+//@MotanService(export = "8888",group = "iiiiii",interfaceClass = FooService.class)
 @MotanService
 public class Hello implements FooService {
     @Override
