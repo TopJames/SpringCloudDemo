@@ -1,5 +1,13 @@
 server:
-  port: 9000
+  port: 9003
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  #    defaultZone: http://10.102.47.236:8761/eureka/
+spring:
+  application:
+    name: motan-service-boot
 
 
 motan:
@@ -8,14 +16,15 @@ motan:
   registry:
     regProtocol: consul
     address: 127.0.0.1:8500
+#    address: 10.102.47.236:8500
     name: my_consul
 #    connectTimeout: 40000
-#  protocol:
-#      name: motan
+  protocol:
+      name: motan
   basicservice:
       group: oooooo
       application: demo
-      export: 8888
+      exportPort: 8889
 #      accessLog: false
 #      shareChannel: true
 #  referer:

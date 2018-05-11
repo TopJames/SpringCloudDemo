@@ -22,7 +22,7 @@ public class ConfigConstructor {
     private static final String REGISTRY_CONFIG_BEAN_NAME = "lalalalalalallalalladas_spring-boot-starter-motan-registry_";
     /** 协议配置bean名称 */
   //  private static final String PROTOCOL_CONFIG_BEAN_NAME = "hdiwuhqdi82yeds7298ypd7fuck!_spring-boot-starter-motan-protocol_";
-    private static final String PROTOCOL_CONFIG_BEAN_NAME = "motan";
+    private static final String PROTOCOL_CONFIG_BEAN_NAME = "ccccccc_motan";
 
     /**
      * define AnnotationBean

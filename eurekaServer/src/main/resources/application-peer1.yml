@@ -7,7 +7,7 @@ eureka:
   instance:
     hostname: peer1
     prefer-ip-address: true
-  client:
-    serviceUrl:
+#  client:
+#    serviceUrl:
 #      defaultZone: http://peer2:8769/eureka/
-       defaultZone: http://127.0.0.1:8769/eureka/
+#       defaultZone: http://127.0.0.1:8769/eureka/
