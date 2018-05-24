@@ -14,7 +14,8 @@
     <!-- exporting service by Motan -->
     <!--<motan:service interface="com.motanService.demo.service.FooService" ref="serviceImpl" export="8002" />-->
 
-    <motan:basicService id="baseService" group="oooooo" registry="my_consul" export="8002" />
+
+    <motan:basicService id="baseService" group="oooooo" registry="my_consul" export="8002" shareChannel="true" />
 
     <motan:service group="oooooo" interface="com.motanService.demo.service.FooService" ref="serviceImpl" basicService="baseService" />
 
