@@ -27,3 +27,4 @@ motan:
   basicreferer:
     group: oooooo
     request-timeout: 40000
+    filter: ClientFilter

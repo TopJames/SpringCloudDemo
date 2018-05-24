@@ -10,8 +10,13 @@
 
     <!-- service implemention bean -->
     <bean id="serviceImpl" class="com.motanService.demo.service.impl.Hello" />
+    <bean id="demoImpl" class="com.motanService.demo.service.impl.DemoImpl" />
     <!-- exporting service by Motan -->
     <!--<motan:service interface="com.motanService.demo.service.FooService" ref="serviceImpl" export="8002" />-->
 
-    <motan:service group="oooooo" interface="com.motanService.demo.service.FooService" ref="serviceImpl" registry="my_consul"  export="8002" />
+    <motan:basicService id="baseService" group="oooooo" registry="my_consul" export="8002" />
+
+    <motan:service group="oooooo" interface="com.motanService.demo.service.FooService" ref="serviceImpl" basicService="baseService" />
+
+    <motan:service group="oooooo" interface="com.motanService.demo.service.DemoIn" ref="demoImpl" basicService="baseService" />
 </beans>

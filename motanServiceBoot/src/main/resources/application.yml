@@ -24,7 +24,9 @@ motan:
   basicservice:
       group: oooooo
       application: demo
-      exportPort: 8889
+#      export: 8889
+      filter: ServiceFilter
+      exportPort: 8777
 #      accessLog: false
 #      shareChannel: true
 #  referer:

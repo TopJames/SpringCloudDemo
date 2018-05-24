@@ -141,16 +141,7 @@
 				<!--<enabled>false</enabled>-->
 			<!--</snapshots>-->
 		<!--</repository>-->
-		<repository>
-			<id>central</id>
-			<name>Maven Repository Switchboard</name>
-			<url>http://repo1.maven.org/maven2/</url>
-		</repository>
-		<repository>
-			<id>repo2</id>
-			<name>Human Readable Name for this Mirror.</name>
-			<url>http://repo2.maven.org/maven2/</url>
-		</repository>
+
 		<repository>
 			<id>ibiblio</id>
 			<name>Human Readable Name for this Mirror.</name>
@@ -160,6 +151,16 @@
 			<id>jboss-public-repository-group</id>
 			<name>JBoss Public Repository Group</name>
 			<url>http://repository.jboss.org/nexus/content/groups/public</url>
+		</repository>
+		<repository>
+			<id>central</id>
+			<name>Maven Repository Switchboard</name>
+			<url>http://repo1.maven.org/maven2/</url>
+		</repository>
+		<repository>
+			<id>repo2</id>
+			<name>Human Readable Name for this Mirror.</name>
+			<url>http://repo2.maven.org/maven2/</url>
 		</repository>
 		<!-- 中央仓库在中国的镜像 -->
 		<repository>
