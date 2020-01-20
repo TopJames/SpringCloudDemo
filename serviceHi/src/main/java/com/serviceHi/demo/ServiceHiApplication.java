@@ -39,6 +39,12 @@ public class ServiceHiApplication {
 		return restTemplate.getForObject("http://localhost:8989/himiya", String.class);
 	}
 
+	@RequestMapping("/hizone")
+	@HystrixCommand(fallbackMethod = "hiError")
+	public String hizone(@RequestParam String name) {
+		return "hizone,name:"+name+",port:"+port;
+	}
+
 	@RequestMapping("/hi2")
 	@HystrixCommand(fallbackMethod = "hiError2")
 	public String home2(@RequestParam String name) {

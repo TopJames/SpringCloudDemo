@@ -1,9 +1,21 @@
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://peer1:8761/eureka/
-server:
-  port: 8762
-spring:
-  application:
-    name: service-hi
+#eureka:
+#  client:
+#    prefer-same-zone-eureka: true
+#    region: region1
+#    availability-zones:
+#      region1: test1,test2
+#    service-url:
+#      test1: http://localhost:1112/eureka/
+#      test2: http://localhost:1113/eureka/
+#  instance:
+#    metadata-map:
+#      zone: test1
+#
+#
+#
+#
+#server:
+#  port: 8762
+#spring:
+#  application:
+#    name: service-hi

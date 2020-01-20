@@ -1,0 +1,25 @@
+eureka:
+  client:
+    prefer-same-zone-eureka: true
+    region: region1
+    availability-zones:
+      region1: test1,test2
+    service-url:
+      test1: http://localhost:1112/eureka/
+      test2: http://localhost:1113/eureka/
+  instance:
+    metadata-map:
+      zone: test1
+    hostname: zone-test1
+    prefer-ip-address: true
+
+
+server:
+  port: 8771
+spring:
+  application:
+    name: service-feign
+
+feign:
+  hystrix:
+    enabled: true

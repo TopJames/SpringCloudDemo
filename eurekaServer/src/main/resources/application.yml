@@ -1,5 +1,5 @@
 server:
-  port: 8761
+  port: 1111
 
 eureka:
   instance:
@@ -8,3 +8,4 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
+

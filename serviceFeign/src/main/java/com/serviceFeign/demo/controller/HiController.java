@@ -19,4 +19,9 @@ public class HiController {
     public String sayHi(@RequestParam(value="name") String name){
         return schedualServiceHi.sayHiFromClientOne(name);
     }
+
+    @RequestMapping("/hiZone")
+    public String hiZone(@RequestParam(value="name") String name){
+        return schedualServiceHi.hizone(name);
+    }
 }

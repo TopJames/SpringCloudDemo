@@ -12,4 +12,9 @@ public class SchedualServiceHiHystric implements SchedualServiceHi {
     public String sayHiFromClientOne(@RequestParam(value = "name") String name) {
         return "sorry,"+name+".  service down!";
     }
+
+    @Override
+    public String hizone(@RequestParam(value = "name") String name) {
+        return "sorry,hizone:"+name+".  service down!";
+    }
 }

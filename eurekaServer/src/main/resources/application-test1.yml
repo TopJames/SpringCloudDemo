@@ -1,0 +1,15 @@
+server:
+  port: 1112
+
+eureka:
+    client:
+        region: region1
+        availability-zones:
+            region1: test1,test2
+        service-url:
+            test1: http://localhost:1112/eureka/
+            test2: http://localhost:1113/eureka/
+    instance:
+        hostname: zone-test1
+        prefer-ip-address: true
+

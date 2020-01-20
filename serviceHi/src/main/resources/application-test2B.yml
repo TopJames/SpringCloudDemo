@@ -1,0 +1,23 @@
+eureka:
+  client:
+    prefer-same-zone-eureka: true
+    region: region1
+    availability-zones:
+      region1: test2,test1
+    service-url:
+      test1: http://localhost:1112/eureka/
+      test2: http://localhost:1113/eureka/
+  instance:
+    metadata-map:
+      zone: test2
+    hostname: zone-test2
+    prefer-ip-address: true
+
+
+
+
+server:
+  port: 8764
+spring:
+  application:
+    name: service-hi
